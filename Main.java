@@ -1,4 +1,4 @@
-import java.util.Arrays;
+iimport java.util.Arrays;
 import java.util.Scanner;
 // summary of code functions:
 // - detects and removes any groups of captured pieces, regardless
