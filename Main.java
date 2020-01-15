@@ -17,13 +17,13 @@ class Main
     // scanner is useful
     Scanner usefulBoi = new Scanner(System.in);
 
-    System.out.println("YOU WANNA PLAY GO? ENTER A BOARD SIZE! (9, 13, or 19)");
+    System.out.println("Welcome to Go! Please enter a board size. (9, 13, or 19)");
     String boardSize = usefulBoi.nextLine();
 
     // robustness check
     while(!(boardSize.equals("9") || boardSize.equals("13") || boardSize.equals("19")))
     {
-      System.out.println("ENTER A VALID BOARD SIZE YOU IDIOT!");
+      System.out.println("Only one of the specified board sizes are allowed.");
       boardSize = usefulBoi.nextLine();
     }
 
@@ -48,7 +48,7 @@ class Main
     // the loop for the game itself
     while(true)
     {
-      System.out.println("BLACK TURN!!!");
+      System.out.println("Black turn: Player One");
       black.takeTurn();
       printTheBoard(counter, theBoard);
 
@@ -57,7 +57,7 @@ class Main
         break;
       }
       
-      System.out.println("WHITE TURN!!!");
+      System.out.println("White turn: Player Two");
       white.takeTurn();
       printTheBoard(counter, theBoard);
 
@@ -83,7 +83,7 @@ class Main
   {
     if(one.getPassedLastTurn() && two.getPassedLastTurn())
     {
-      System.out.println("WE DONE!!!");
+      System.out.println("The game is finished!");
       return true;
     }
     return false;
@@ -145,31 +145,31 @@ class Main
   {
     Scanner scan = new Scanner(System.in);
     
-    System.out.println("ENTER BLACK SCORE!");
+    System.out.println("Enter Player One's score for tallying.");
     String blackScore = scan.nextLine();
     while(!isValidScore(blackScore))
     {
-      System.out.println("ENTER A VALID SCORE YOU IDIOT!!!");
+      System.out.println("That is not a valid score. Try counting again.");
       blackScore = scan.nextLine();
     }
     int intBlackScore = Integer.parseInt(blackScore);
 
-    System.out.println("ENTER WHITE SCORE!");
+    System.out.println("Enter Player Two's score for tallying.");
     String whiteScore = scan.nextLine();
     while(!isValidScore(whiteScore))
     {
-      System.out.println("ENTER A VALID SCORE YOU IDIOT!!!");
+      System.out.println("That is not a valid score. Try counting again.");
       whiteScore = scan.nextLine();
     }
     int intWhiteScore = Integer.parseInt(whiteScore);
 
     if(intWhiteScore + 5 > intBlackScore)
     {
-      System.out.println("WHITE WINS!!!");
+      System.out.println("CONGRATULATIONS, WHITE WINS!!!");
     }
     else if(intWhiteScore + 5 < intBlackScore)
     {
-      System.out.println("BLACK WINS!!!");
+      System.out.println("CONGRATULATIONS, BLACK WINS!!!");
     }
     else
     {
