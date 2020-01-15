@@ -20,6 +20,7 @@ This is exactly what the description says it is. I am working on a means to disp
     * to play a piece at a location, simply enter the letter-number combination of the indices of that location
 * when a piece or a group of pieces are completely surrounded by enemy pieces, ergo, there are no free "0"s adjacent to any member of the group - edges do not count as free - it is "captured" and removed from the board
     * for example, the black piece here is adjacent to only one empty spot, and would be captured if a white piece was placed above it
+    
       ```
       0, 0, 0, 0, 0        0, 0, 0, 0, 0
       0, 0, 0, 0, 0        0, 0, 2, 0, 0
@@ -27,7 +28,9 @@ This is exactly what the description says it is. I am working on a means to disp
       0, 0, 2, 0, 0        0, 0, 2, 0, 0
       0, 0, 0, 0, 0        0, 0, 0, 0, 0
       ```
+      
     * similarly, the the white group becomes captured when the last free "0" (called "liberty") adjacent to any of it's members is taken by a black piece
+    
       ```
       0, 0, 1, 0, 0        0, 0, 1, 0, 0
       0, 1, 2, 1, 0        0, 1, 0, 1, 0
@@ -35,6 +38,7 @@ This is exactly what the description says it is. I am working on a means to disp
       0, 2, 1, 1, 0        1, 0, 1, 1, 0
       0, 1, 0, 0, 0        0, 1, 0, 0, 0
       ```
+      
 * the goal of the game is to end with your pieces convering as much area of the board as possible
 * several rules to pay attention to:
     * you cannot play a piece at a location that will result in it or its group being immediately captured on the same turn
