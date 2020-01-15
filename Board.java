@@ -84,7 +84,7 @@ public class Board
   {
     if(newState.equals(previousState))
     {
-      System.out.println("KO RULE VIOLATED YOU DONKEY!!!");
+      System.out.println("You have violated the KO rule. Wait until the next turn to play here.");
       return false;
     }
     // only needs to check if current location is captured
@@ -92,7 +92,7 @@ public class Board
     // enemy piece this stone would capture
     if(isCaptured(y, x, color))
     {
-      System.out.println("DON'T SUICIDE YOU DONKEY!!!");
+      System.out.println("You cannot suicide!");
       return false;
     }
     return true;
