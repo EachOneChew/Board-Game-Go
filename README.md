@@ -7,7 +7,7 @@ This is exactly what the description says it is. I am working on a means to disp
 # How to Run
 
 * download the repo - you only need the 4 .java files (make sure they are in the same folder)
-* compile with javac and run main.java
+* compile with javac and run Main.java
 * play Go :D
 
 # How to Play
