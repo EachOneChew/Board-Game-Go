@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/EachOneChew/Go.svg?branch=master)](https://travis-ci.org/EachOneChew/Go)
+[![Build Status](https://travis-ci.com/EachOneChew/Dijkstra-s-Algorithm-FEH.svg?branch=master)](https://travis-ci.com/EachOneChew/Dijkstra-s-Algorithm-FEH)
 
 # What the Hell Is This?
 
