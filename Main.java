@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import resources.*;
+
 // summary of code functions:
 // - detects and removes any groups of captured pieces, regardless
 // of group size or catalyst location
