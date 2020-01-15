@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-class Main
+class Test
 {
   public static void main(String[] args)
   {
@@ -45,5 +43,7 @@ class Main
         assert testBoard1.getBoard()[i][j] == 0 : " uncaptured piece";
       }
     }
+
+    System.out.println("Everything works!");
   }
 }
