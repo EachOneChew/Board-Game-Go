@@ -35,7 +35,7 @@ public class Player
     // check for if playerResponse is a valid one
     while(!isValidResponse(playerResponse))
     {
-      System.out.println("THAT DOESN'T WORK YOU IDIOT!!!");
+      System.out.println("That is not a valid response!");
       playerResponse = scan.nextLine();
     }
 
@@ -50,12 +50,12 @@ public class Player
 
     while(playingField.getBoard()[y][x] != 0)
     {
-      System.out.println("Enter an empty spot you idiot!");
+      System.out.println("You have to play on an empty spot.");
       playerResponse = scan.nextLine();
       // just in case player is ACTUALLY messing with me
       while(!isValidResponse(playerResponse))
       {
-        System.out.println("THAT DOESN'T WORK YOU IDIOT!!!");
+        System.out.println("That is not a valid response!");
         playerResponse = scan.nextLine();
       }
       y = responseToY(playerResponse);
@@ -65,7 +65,7 @@ public class Player
     // placePiece actually returns a boolean so this works
     while(!playingField.placePiece(y, x, color))
     {
-      System.out.println("You can't play there you idiot, try again!");
+      System.out.println("You can't play there!");
       playerResponse = scan.nextLine();
       y = responseToY(playerResponse);
       x = responseToX(playerResponse);
