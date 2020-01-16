@@ -1,4 +1,4 @@
-import resources.*;
+import src.*;
 
 class Test
 {
