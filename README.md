@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/EachOneChew/Dijkstra-s-Algorithm-FEH.svg?branch=master)](https://travis-ci.com/EachOneChew/Dijkstra-s-Algorithm-FEH)
+[![Build Status](https://travis-ci.com/EachOneChew/Board-Game-Go.svg?branch=master)](https://travis-ci.com/EachOneChew/Board-Game-Go)
 
 # Welcome
 
