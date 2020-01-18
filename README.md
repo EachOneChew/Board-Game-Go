@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/EachOneChew/Board-Game-Go.svg?branch=master)](https://travis-ci.com/EachOneChew/Board-Game-Go)
 
+![GitHub repo size](https://img.shields.io/github/repo-size/eachonechew/board-game-go)
+
 # Welcome
 
 This is exactly what the description says it is. I am working on a means to display the board in a less ugly way. Further into the future I might try to implement a rudimentary scoring system, but programming an AI opponent will probably be beyond my ability for some time.
