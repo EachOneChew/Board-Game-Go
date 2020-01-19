@@ -1,4 +1,4 @@
 language: java
 script:
   - javac *.java
-  - java Test
+  - java -ea Test
